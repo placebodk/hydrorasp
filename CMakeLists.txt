@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.8.9)
+project (hydrorasp)
+#add_library (pigpio SHARED)
+add_executable(hydrorasp src/iopin.cpp src/main.cpp src/outputpin.cpp)
+target_link_libraries(hydrorasp pigpio pthread)

@@ -1,13 +1,11 @@
-#ifdef __IOPIN_H__
+#ifndef __IOPIN_H__
 #define __IOPIN_H__
-
-#include "globals.h"
 
 class IoPin
 {
+public:
     IoPin( int pin );
 
-public:
     int m_iPin;    
 };
 
